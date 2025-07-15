@@ -2,7 +2,31 @@
 1. 按照官方的程序安装
 2. 使用鱼香ros脚本安装（recommend）
 3. 使用docker容器配置
-4. 虚拟机安装Ubuntu配置
+4. 虚拟机安装Ubuntu配置 （Ubuntu 24.04.2 for ARM : https://cdimage.ubuntu.com/noble/daily-live/current/)
+
+---
+
+## Ubuntu Server
+
+This is the default ISO image of the Ubuntu Server installer.
+
+---
+
+[Download 24.04.2 LTS](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.2-live-server-arm64.iso)   [Download 25.04](https://cdimage.ubuntu.com/releases/25.04/release/ubuntu-25.04-live-server-arm64.iso)
+
+[Alternative and previous releases ›](https://cdimage.ubuntu.com/releases)    [How to install ›](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview)
+
+---
+
+## Ubuntu Server (64k page size)
+
+This ISO image is suited for servers with ample memory running memory-intensive applications.
+
+---
+
+[Download 24.04.2 LTS (64k page size)](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.2-live-server-arm64+largemem.iso) [Download 25.04 (64k page size)](https://cdimage.ubuntu.com/releases/25.04/release/ubuntu-25.04-live-server-arm64+largemem.iso)
+
+[Find out if 64k page size is for you ›](https://ubuntu.com/server/docs/choosing-between-the-arm64-and-arm64-largemem-installer-options)
 
 ---
 

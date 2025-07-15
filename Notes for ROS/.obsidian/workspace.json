@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "在docker上验证ROS的安装.md",
+                "file": "使用docker的基本语句.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "在docker上验证ROS的安装"
+              "title": "使用docker的基本语句"
             }
           }
         ]
@@ -169,15 +169,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b2c741364928c2a0",
+  "active": "35fb4d8f0a65c678",
   "lastOpenFiles": [
-    "README.md",
-    "在docker上验证ROS的安装.md",
     "使用RViz.md",
+    "使用docker的基本语句.md",
     "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+    "在docker上验证ROS的安装.md",
+    "README.md",
     "ROS GPG Key Problem when using docker.md",
     "Pasted image 20250715194402.png",
-    "在docker中运行ros的GUI 显示问题解决.md",
-    "使用docker的基本语句.md"
+    "在docker中运行ros的GUI 显示问题解决.md"
   ]
 }
