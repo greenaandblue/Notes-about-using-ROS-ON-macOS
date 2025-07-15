@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "25f9a7053c18b64c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b43d6712cc17e613",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2240aeb921ed47ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "421e3e9f6d456759",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9b098695348087a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d88061cc93cc8b41",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "49143fbfa3f1c9ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "93d267b2b8b41b66",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d62eba1b53d19fb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3806746fc0ff88f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61c0dfd2443f6582",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "df6f0572db19a5a0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b1567f7401c5abd1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "42b00f71a4ecb239",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2240aeb921ed47ee",
+  "lastOpenFiles": [
+    "Notes for ROS/在docker中运行ros的GUI 显示问题解决.md",
+    "Notes for ROS/在docker上验证ROS的安装.md",
+    "Notes for ROS/使用docker的基本语句.md",
+    "Notes for ROS/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+    "Notes for ROS/使用RViz.md",
+    "Notes for ROS/Pasted image 20250715194402.png",
+    "Notes for ROS/ROS GPG Key Problem when using docker.md",
+    "Notes for ROS",
+    "Notes for CE/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+    "Notes for CE/ROS GPG Key Problem when using docker.md",
+    "Notes for CE/Pasted image 20250715194402.png"
+  ]
+}
