@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Notes for ROS/使用docker的基本语句.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "使用docker的基本语句"
             }
           }
         ]
@@ -162,18 +162,20 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "2240aeb921ed47ee",
   "lastOpenFiles": [
-    "Notes for ROS/在docker中运行ros的GUI 显示问题解决.md",
-    "Notes for ROS/在docker上验证ROS的安装.md",
-    "Notes for ROS/使用docker的基本语句.md",
-    "Notes for ROS/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
-    "Notes for ROS/使用RViz.md",
     "Notes for ROS/Pasted image 20250715194402.png",
+    "Notes for ROS/README.md",
     "Notes for ROS/ROS GPG Key Problem when using docker.md",
+    "Notes for ROS/使用RViz.md",
+    "Notes for ROS/在docker上验证ROS的安装.md",
+    "Notes for ROS/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+    "Notes for ROS/在docker中运行ros的GUI 显示问题解决.md",
+    "Notes for ROS/使用docker的基本语句.md",
     "Notes for ROS",
     "Notes for CE/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
     "Notes for CE/ROS GPG Key Problem when using docker.md",
