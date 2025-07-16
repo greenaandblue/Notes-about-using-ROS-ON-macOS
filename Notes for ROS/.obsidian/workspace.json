@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods"
+              "title": "Untitled"
             }
           }
         ],
@@ -186,13 +186,13 @@
   },
   "active": "286e1c198bd26a77",
   "lastOpenFiles": [
+    "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
     "ROS GPG Key Problem when using docker.md",
     "Pasted image 20250715194402.png",
     "Untitled.md",
     "在docker中运行ros的GUI 显示问题解决.md",
     "使用docker的基本语句.md",
     "使用RViz.md",
-    "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
     "在docker上验证ROS的安装.md",
     "README.md"
   ]

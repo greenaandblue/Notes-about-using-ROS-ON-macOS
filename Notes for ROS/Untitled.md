@@ -1,0 +1,83 @@
+你的容器 `quirky_vaughan`（ID: `9e497575dff5`）**状态非常好**，你的 ROS1 工作空间已经**全部编译成功**，没有失败的包，只有一些警告（可以忽略）。  
+你已经在 `/root/ros1_ws` 下，并且已经执行了 `source devel/setup.bash`，环境已经激活。
+
+---
+
+## 容器当前状态
+
+- **ROS Noetic 已安装**
+- **catkin build 已用，所有包都编译成功**
+- **你在 `/root/ros1_ws` 目录下**
+- **可以直接运行 ROS 项目相关命令**
+
+---
+
+## 如果你新开一个 Terminal Window，应该怎么做？
+
+### 1. **进入容器**
+
+在 Mac 终端执行：
+
+```bash
+docker start quirky_vaughan
+docker exec -it quirky_vaughan bash
+```
+
+### 2. **进入你的工作空间目录**
+
+```bash
+cd /root/ros1_ws
+```
+
+### 3. **激活 ROS 和你的工作空间环境**
+
+```bash
+source /opt/ros/noetic/setup.bash
+source devel/setup.bash
+```
+
+> **注意**：每次新开终端都要重新 source 这两个环境脚本！
+
+---
+
+## 4. **运行你的项目（以 Gazebo 仿真为例）**
+
+假如你要运行 Gazebo 仿真：
+
+```bash
+roslaunch kmriiwa_gazebo kmriiwa_empty_world.launch
+```
+或者
+```bash
+roslaunch kmriiwa_gazebo kmriiwa_test_zone.launch
+```
+
+---
+
+## 5. **如果需要 GUI（Gazebo/Rviz）**
+
+确保你启动容器时加了 DISPLAY 变量，并且 Mac 上 XQuartz 已启动并执行了 `xhost +`。
+
+---
+
+## 总结：**新开终端完整操作流程**
+
+1. **进入容器：**
+   ```bash
+   docker start quirky_vaughan
+   docker exec -it quirky_vaughan bash
+   ```
+2. **进入工作空间：**
+   ```bash
+   cd /root/ros1_ws
+   ```
+3. **激活环境：**
+   ```bash
+   source /opt/ros/noetic/setup.bash
+   source devel/setup.bash
+   ```
+4. **运行你的 ROS 命令。**
+
+---
+
+如有任何运行报错或 Gazebo/Rviz 窗口打不开，随时把报错内容发给我！
