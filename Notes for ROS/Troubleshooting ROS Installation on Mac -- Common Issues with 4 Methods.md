@@ -1,35 +1,10 @@
 在mac上使用以下4种方法安装ROS遇到的问题汇总
 1. 按照官方的程序安装
-2. 使用鱼香ros脚本安装（recommend）
+2. 使用鱼香ros脚本安装
 3. 使用docker容器配置
 4. 虚拟机安装Ubuntu配置 （Ubuntu 24.04.2 for ARM : https://cdimage.ubuntu.com/noble/daily-live/current/)
 
 ---
-
-## Ubuntu Server
-
-This is the default ISO image of the Ubuntu Server installer.
-
----
-
-[Download 24.04.2 LTS](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.2-live-server-arm64.iso)   [Download 25.04](https://cdimage.ubuntu.com/releases/25.04/release/ubuntu-25.04-live-server-arm64.iso)
-
-[Alternative and previous releases ›](https://cdimage.ubuntu.com/releases)    [How to install ›](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview)
-
----
-
-## Ubuntu Server (64k page size)
-
-This ISO image is suited for servers with ample memory running memory-intensive applications.
-
----
-
-[Download 24.04.2 LTS (64k page size)](https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.2-live-server-arm64+largemem.iso) [Download 25.04 (64k page size)](https://cdimage.ubuntu.com/releases/25.04/release/ubuntu-25.04-live-server-arm64+largemem.iso)
-
-[Find out if 64k page size is for you ›](https://ubuntu.com/server/docs/choosing-between-the-arm64-and-arm64-largemem-installer-options)
-
----
-
 
 ### 1. 按照官方的程序安装
 
@@ -283,26 +258,139 @@ apt update
 
 #### 虚拟机安装 Ubuntu 配置
 
-这是指你在 Mac 上通过 VMware (或其他虚拟机软件如 Parallels Desktop、UTM) 创建一个虚拟机，并在虚拟机中安装完整的 Ubuntu 操作系统，然后在 Ubuntu 中按照 ROS 官方教程或鱼香 ROS 的脚本来安装 ROS。
+我在 Mac 上通过 VMware (或其他虚拟机软件如 Parallels Desktop、UTM) 创建了一个虚拟机，并在虚拟机中安装完整的 Ubuntu 操作系统，然后配置ROS，这是我下载最顺的一个。
 
-- **安装方式：** 首先是**虚拟化层**，其次是**在虚拟机内的 Ubuntu 系统上安装 ROS**。
+---
+
+#### 1. 准备 Ubuntu 虚拟机
+
+Ubuntu官方已经出了支持arm64的版本了，Ubuntu24.02 https://cdimage.ubuntu.com/noble/daily-live/current/, 这里我们选择LST版本，这个比较稳定，也可以自官网找到Ubuntu25这个版本，这个比较新。
+
+然后就是根据Ubuntu的版本来选择ROS的版本。
+
+针对 Ubuntu 24.04.2 (ARM 架构) 虚拟机安装 ROS，你需要安装 **ROS 2 Jazzy Jalisco**。这是与 Ubuntu 24.04 兼容的最新 LTS (长期支持) ROS 2 版本。
+
+确保你的 Ubuntu 24.04.2 ARM 虚拟机已准备就绪，并满足以下建议配置：
+
+- **Ubuntu 版本：** Ubuntu 24.04.2 LTS (Noble Numbat) for ARM
     
-- **优缺点 (基于在 Mac 上虚拟化运行)：**
+- **内存：** 至少 4GB RAM，如果运行 Gazebo 等模拟器，建议 8GB 或更高。
     
-    - **优点：**
-        
-        - **ROS 最佳兼容性：** Ubuntu 是 ROS 的主要开发平台，所有 ROS 包、驱动和工具都为其优化，**RViz 在这里运行的稳定性最高**。
-            
-        - **完整的 Linux 环境：** 提供一个标准、隔离的 Linux 开发环境，不会干扰你的 macOS 主系统。
-            
-        - **广泛的社区支持：** 任何 ROS 问题在 Ubuntu 环境下都更容易找到解决方案和社区支持。
-            
-        - **硬件加速 (有限)：** 现代虚拟机软件（如 VMware Fusion、Parallels Desktop）在 M 芯片 Mac 上已经能为 ARM64 Ubuntu 提供不错的虚拟化图形加速，RViz 性能通常可以接受。
-            
-    - **缺点：**
-        
-        - **性能开销：** 虚拟机需要分配独立的 CPU、内存和磁盘空间，会额外占用 Mac 资源。
-            
-        - **资源消耗：** 运行虚拟机本身会增加 Mac 的功耗和发热。
-            
-        - **初始设置：** 首次安装虚拟机和 Ubuntu 系统需要一些时间，但通常是一次性的投入。
+- **CPU：** 2 核或更多。
+    
+- **存储：** 至少 20GB 可用空间。
+    
+
+#### 2. 配置 Ubuntu 软件源
+
+ROS 2 的安装需要通过 Ubuntu 的 `apt` 包管理器。首先，确保你的软件源配置正确，并允许下载 ROS 2 包。
+
+1. 设置区域设置 (Locale)：
+    
+    ROS 2 依赖于正确的区域设置。确保你的系统区域设置为 UTF-8。
+    
+    ```
+    sudo apt update && sudo apt install locales
+    sudo locale-gen en_US en_US.UTF-8
+    sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    ```
+    
+    你可能需要重启终端或虚拟机以使这些更改生效。
+    
+2. 添加 ROS 2 GPG Key：
+    
+    为了验证下载的包，你需要添加 ROS 2 的 GPG key。
+    
+    ```
+    sudo apt update && sudo apt install curl -y
+    sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+    ```
+    
+3. 添加 ROS 2 软件源：
+    
+    将 ROS 2 软件源添加到你的系统中。
+    
+    ```
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+    ```
+    
+    这里的 `$(dpkg --print-architecture)` 会自动检测你的 ARM 架构（如 `arm64`），`$(. /etc/os-release && echo UBUNTU_CODENAME)` 会自动检测 Ubuntu 版本代号（对于 24.04 是 `noble`）。
+    
+4. 更新包列表：
+    
+    添加完源和 key 后，更新你的包列表：
+    
+    ```
+    sudo apt update
+    ```
+    
+
+#### 3. 安装 ROS 2 Jazzy Jalisco
+
+现在你可以安装 ROS 2 了。通常推荐安装 **桌面完整版 (Desktop-Full Install)**，它包含了 ROS 2、rqt、rviz、通用机器人库以及 2D/3D 模拟器。
+
+```
+sudo apt install ros-jazzy-desktop-full
+```
+
+这个过程可能需要一些时间，取决于你的网络速度。
+
+#### 4. 设置 ROS 2 环境变量
+
+每次打开新的终端时，你都需要将 ROS 2 环境变量添加到 `bash` 会话中，以便系统能够找到 ROS 2 命令和库。
+
+```
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+为了验证是否设置成功，可以尝试在终端中输入 `printenv | grep ROS_DISTRO`，如果能看到 `jazzy`，则表示设置成功。
+
+#### 5. 安装 ROS 2 构建工具 (可选，推荐)
+
+如果你计划开发 ROS 2 包，你还需要安装 `colcon` 等构建工具。
+
+```
+sudo apt install python3-colcon-common-extensions
+```
+
+如果你需要使用 `rosdep` 来安装 ROS 2 包的依赖，也需要安装它：
+
+```
+sudo apt install python3-rosdep
+sudo rosdep init
+rosdep update
+```
+
+- **在`rosdep update` 这一步，请把VPN global打开，下完就可以关上了。过程中有时候失败有两种原因，一种是打开了VPN，不太稳定，然后识别不到DNS；不然就是VPN没开，数据拉不到。**
+#### 6. 测试你的 ROS 2 安装
+
+安装完成后，你可以运行一些 ROS 2 示例来验证你的安装是否成功。
+
+1. 启动 ROS 2 守护进程 (可选，但推荐)：
+    
+    虽然 ROS 2 不像 ROS 1 那样需要 roscore，但你可以启动一个 daemon 来管理节点。
+    
+    ```
+    ros2 daemon start
+    ```
+    
+2. 运行 talker 和 listener 示例：
+    
+    打开一个终端，运行 talker 节点：
+    
+    ```
+    ros2 run demo_nodes_cpp talker
+    ```
+    
+    再打开另一个终端，运行 `listener` 节点：
+    
+    ```
+    ros2 run demo_nodes_py listener
+    ```
+    
+    如果 `listener` 终端能持续收到 `talker` 发送的消息（例如 "Hello World: X"），那么恭喜你，ROS 2 已经成功安装并运行在你的 Ubuntu 虚拟机上了！
+    
+
+---
