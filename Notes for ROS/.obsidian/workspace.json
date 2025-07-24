@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "在docker中运行ros的GUI 显示问题解决.md",
+                "file": "在Mac主机上的Docker容器中运行GUI应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "在docker中运行ros的GUI 显示问题解决"
+              "title": "在Mac主机上的Docker容器中运行GUI应用"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20250715194402.png",
+                "file": "在Mac主机上的Docker容器中运行GUI应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pasted image 20250715194402"
+              "title": "Backlinks for 在Mac主机上的Docker容器中运行GUI应用"
             }
           },
           {
@@ -186,20 +186,33 @@
   },
   "active": "286e1c198bd26a77",
   "lastOpenFiles": [
+    "在docker中运行ros的GUI 显示问题解决.md",
+    "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
     "Screenshot 2025-07-10 at 1.55.58 AM.png",
-    "Screenshot 2025-07-10 at 1.35.00 AM.png",
+    "Screenshot 2025-07-16 at 9.39.59 PM.png",
+    "Screenshot 2025-07-16 at 10.55.43 PM.png",
+    "Screenshot 2025-07-16 at 6.26.44 AM.png",
+    "Screenshot 2025-07-10 at 1.49.34 AM.png",
+    "使用ROS1的项目示例.md",
+    "123.mov",
+    "Pasted image 20250724220548.png",
+    "IMG_6225.mov",
+    "upsidedown.mov",
+    "在docker上验证ROS的安装.md",
     "在Mac主机上的Docker容器中运行GUI应用.md",
+    "开始使用容器的指令.md",
     "15_1753352598.mp4",
     "14_1753352596.mp4",
-    "Screenshot 2025-07-10 at 1.49.34 AM.png",
-    "Screenshot 2025-07-16 at 9.39.59 PM.png",
-    "在docker上验证ROS的安装.md",
-    "在docker中运行ros的GUI 显示问题解决.md",
-    "使用docker的基本语句.md",
-    "开始使用容器的指令.md",
-    "Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
-    "ROS GPG Key Problem when using docker.md",
     "Pasted image 20250715194402.png",
+    "Screenshot 2025-07-09 at 11.30.59 PM.png",
+    "Screenshot 2025-07-10 at 1.35.00 AM.png",
+    "使用docker的基本语句.md",
+    "IMG_6225 3.mov",
+    "IMG_6225 2.mov",
+    "IMG_6225 1.mov",
+    "Untitled",
+    "notes about using ROS on Mac",
+    "ROS GPG Key Problem when using docker.md",
     "README.md"
   ]
 }

@@ -193,6 +193,8 @@
 
 ### 3.使用docker容器配置
 
+![[Screenshot 2025-07-09 at 11.30.59 PM.png]]
+
 #### 1. 问题：GPG 密钥过期，导致 apt update 和 apt install 无法使用
 
 #### 报错信息：

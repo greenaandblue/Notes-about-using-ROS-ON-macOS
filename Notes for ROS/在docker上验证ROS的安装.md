@@ -253,4 +253,7 @@ If you see these messages in both windows, it means your ROS environment is corr
 
 
 ### result example
+for ROS1:
 ![[Pasted image 20250715194402.png]]
+for ROS2:
+![[Screenshot 2025-07-16 at 6.26.44 AM.png]]
