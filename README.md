@@ -98,11 +98,8 @@ A practical deployment example using ROS in a robotics project:
 
 # Repository Structure
 
-- notes/ # Documentation
-- attachments/ # Screenshots and demo files
-- README.md
--.gitignore
-
+- notes/ # Documentation (guidance and troubleshooting)
+- attachments/ # Screenshots and demo files (also exist in notes)
 
 ---
 
