@@ -1,4 +1,4 @@
-# ROS on macOS Apple Silicon
+# Setup ROS on macOS Apple Silicon
 
 A practical guide for running **ROS 1 and ROS 2 on macOS**, with a focus on **Apple Silicon (M1/M2/M3) Macs**.
 
@@ -98,8 +98,8 @@ A practical deployment example using ROS in a robotics project:
 
 # Repository Structure
 
-- notes/ # Documentation (guidance and troubleshooting)
-- attachments/ # Screenshots and demo files (also exist in notes)
+- notes  **Documentation (guidance and troubleshooting)**
+- attachments  **Screenshots and demo files (also exist in notes)**
 
 ---
 
