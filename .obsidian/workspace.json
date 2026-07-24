@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "f999aec804eec7b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f11943ed1127d39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f649da0602790d06",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "attachments/example_gears.png"
+              },
+              "icon": "lucide-image",
+              "title": "example_gears"
+            }
+          },
+          {
+            "id": "ae6b6a60c8143c34",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "attachments/example_gears.png"
+              },
+              "icon": "lucide-image",
+              "title": "example_gears"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ffb651beecd256e",
+    "type": "split",
+    "children": [
+      {
+        "id": "378ce200166c8385",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2c741364928c2a0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "82e62d4e8524930d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#提示：",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "26e6141e5e6e2655",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "76280b06455f269b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e4fdb7f6fa85d58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef8b808f4d7ad98d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "在Mac主机上的Docker容器中运行GUI应用.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 在Mac主机上的Docker容器中运行GUI应用"
+            }
+          },
+          {
+            "id": "575f0765a49d6a3b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pasted image 20250715194402.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Pasted image 20250715194402"
+            }
+          },
+          {
+            "id": "df9ed9a8a7c190f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fd2af944994f3b94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pasted image 20250715194402.png",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Pasted image 20250715194402"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "b2c741364928c2a0",
+  "lastOpenFiles": [
+    "attachments/example_turtle1.png",
+    "attachments/example_gears.png",
+    "notes/Troubleshooting ROS Installation on Mac -- Common Issues with 4 Methods.md",
+    "notes/ROS GPG Key Problem when using docker.md",
+    "attachments/terminal_result_video.mov",
+    "attachments/terminal_result_pic.png",
+    "attachments/GUI&docker.png",
+    "attachments/talker_listener_test.png",
+    "attachments/example_turtle2.png",
+    "attachments/terminal_ubuntu.png",
+    "attachments/terminal_eyes.png",
+    "attachments/start_planning.png",
+    "IMG_6225.mov",
+    "attachments/test_gears.mp4",
+    "attachments/test_eyes.mp4",
+    "upsidedown.mov",
+    "notes/开始使用容器的指令.md",
+    "notes/在Mac主机上的Docker容器中运行GUI应用.md",
+    "notes/在docker中运行ros的GUI 显示问题解决.md",
+    "notes/在docker上验证ROS的安装.md",
+    "notes/使用ROS1的项目示例.md",
+    "notes/使用docker的基本语句.md",
+    "notes",
+    "IMG_6225 3.mov",
+    "IMG_6225 2.mov",
+    "IMG_6225 1.mov",
+    "attachments",
+    "README.md"
+  ]
+}
